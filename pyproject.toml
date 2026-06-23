@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+    "setuptools>=80.9.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docassemble.MATCJointJointMotionFileMarriageCertificateLate"
+version = "0.0.1"
+description = "A docassemble extension to create a joint motion to file marriage certificate late with 1A joint petition for divorce"
+readme = "README.md"
+authors = [
+    { name = "KP Hunsinger", email = "wkh06781@su.suffolk.edu" },
+]
+dependencies = []
+license = "MIT"
+license-files = [
+    "LICENSE",
+]
+
+[project.urls]
+Homepage = "https://docassemble.org"
+
+[tool.setuptools.packages.find]
+where = [
+    ".",
+]
