@@ -107,7 +107,6 @@ code: |
   else:
     marriage_proof_delay_reason
   set_progress(16)
-  attorneys[0].bbo_number
   users[0].phone_number
   trial_court.division
   set_progress(32)
@@ -271,17 +270,6 @@ content: |
   We are actively working to get the required documents.
 
   We will file the certified marriage certificate (and certified translation, if needed) promptly after receiving them.
----
-id: Attorney Information
-question: |
-  Attorney Information
-subquestion: |
-  Have your attorney's BBO numbers ready.
-fields:
-  - "Attorney A's BBO number": attorneys[0].bbo_number
-    required: False
-  - "Attorney B's BBO number": attorneys[1].bbo_number
-    required: False
 ---
 id: preview jointmotiontofilemarriagecertificatelate
 question: |
@@ -463,5 +451,4 @@ attachment:
   skip undefined: True
   docx template file: jointmotiontofilemarriagecertificatelate.docx
   tagged pdf: True
-
 
